@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tetris - Simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game card">
+      <canvas id="board" width="260" height="520"></canvas>
+    </div>
+
+    <div class="sidebar">
+      <div class="card">
+        <h1>TETRIS</h1>
+        <div class="meta">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="small">Level: <span id="level">1</span> · Lines: <span id="lines">0</span></div>
+        </div>
+        <div class="hint">Controles: ← → mover · ↑ rotar · ↓ bajar · P pausar</div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="small">Dificultad:</div>
+          <select id="difficulty" class="select">
+            <option value="easy">Fácil</option>
+            <option value="normal" selected>Normal</option>
+            <option value="hard">Difícil</option>
+            <option value="extreme">Extremo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="small">Siguiente pieza</div>
+          <canvas id="next" class="nextCanvas" width="120" height="120"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="display:flex;gap:8px">
+          <button id="startBtn" class="btn">Start</button>
+          <button id="pauseBtn" class="btn secondary">Pause</button>
+          <button id="resetBtn" class="btn secondary">Reset</button>
+        </div>
+        <div class="footer">Creado para práctica — podés forquear y mejorar</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

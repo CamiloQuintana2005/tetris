@@ -1,0 +1,77 @@
+:root{
+  --cell-size: 26px;
+  --cols: 10;
+  --rows: 20;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,#0f172a,#071032);
+  color:#e6eef8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  margin:0;
+  padding:20px;
+}
+.container{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+.game {
+  background:#061427;
+  padding:12px;
+  border-radius:12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.7);
+}
+canvas {
+  display:block;
+  background: linear-gradient(180deg,#071733,#062036);
+  border-radius:6px;
+  image-rendering: pixelated;
+}
+.sidebar {
+  width:260px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  padding:12px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.04);
+}
+h1{font-size:18px;margin:0 0 6px 0}
+.meta {display:flex;gap:8px;flex-direction:column}
+.score {
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+.small {font-size:13px;color:#9fb3d6}
+.nextCanvas {width:120px;height:120px;background:transparent;border-radius:6px}
+.btn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.06);
+  padding:8px;
+  border-radius:8px;
+  cursor:pointer;
+  color:#dbeeff;
+  font-weight:600;
+}
+.btn.secondary{background:rgba(255,255,255,0.02)}
+.select{
+  width:100%;
+  padding:6px;
+  border-radius:6px;
+  background:#071733;
+  color:#e6eef8;
+  border:1px solid rgba(255,255,255,0.1);
+  font-weight:600;
+}
+.footer {font-size:12px;color:#9fb3d6}
+.hint {font-size:12px;color:#9fb3d6;margin-top:6px}
