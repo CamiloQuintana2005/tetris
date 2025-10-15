@@ -5,6 +5,13 @@ Este proyecto fue creado como práctica de desarrollo de videojuegos simples usa
 
 ---
 
+### 🚀 **Jugar Online**
+
+Podés jugar directamente desde aqui:
+👉 (https://tetris-by-camiloquintana2005.onrender.com)
+
+---
+
 ### 🎮 **Cómo jugar**
 
 * Usa las **flechas del teclado** para controlar las piezas:
